@@ -1,0 +1,7 @@
+Windows Registry Editor Version 5.00
+
+; Fixes SMB authentication issue. You probably don't want to enable this unless
+; you know what you're doing.
+
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\LanmanWorkstation\Parameters]
+"AllowInsecureGuestAuth"=dword:00000001
